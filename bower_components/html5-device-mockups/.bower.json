@@ -1,0 +1,14 @@
+{
+  "name": "html5-device-mockups",
+  "homepage": "https://github.com/pixelsign/html5-device-mockups",
+  "_release": "887b201791",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "887b2017919833a241a04203ca93001367f962a9"
+  },
+  "_source": "https://github.com/pixelsign/html5-device-mockups.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/pixelsign/html5-device-mockups.git",
+  "_direct": true
+}

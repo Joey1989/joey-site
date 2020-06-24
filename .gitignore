@@ -1,6 +1,5 @@
 .svn/
 node_modules/
-bower_components/
 uploads/
 .DS_Store
 .DS_Store?
