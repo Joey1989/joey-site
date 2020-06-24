@@ -1,0 +1,59 @@
+.legal-nav{
+	padding: 30px 130px 10px 130px;
+}
+
+.legal-nav .navbar-header h1, 
+.legal-nav .navbar-header p, 
+.legal-nav .navbar-headera{
+	color: #ffffff !important;
+}
+
+.legal-nav .navbar-header a{
+	font-family: steelfish;
+	letter-spacing: 10px;
+	font-size: 26px;
+}
+
+.legal-nav .navbar-header h1{
+
+}
+
+.legal-nav .navbar-header p{
+	padding-top: 15px;
+	padding-left: 10px;
+	font-family: serif;
+	letter-spacing: 0;
+}
+
+.legal-page-text{
+	padding: 20px 146px 60px 146px;
+}
+
+.legal-page-text .section-wrapper .section-caption,
+.legal-page-text .section-wrapper .section-content, 
+.legal-page-text .section-wrapper .section-subcaption,
+.legal-page-text .section-wrapper .section-description{
+	text-align: left;
+	color: #000000;
+}
+
+.legal-page-text .section-wrapper .section-caption{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.legal-page-text .section-wrapper .section-subcaption{
+	font-weight: 700;
+	padding-top: 20px;
+}
+
+.legal-page-text .section-wrapper .section-description{
+	font-family: serif;
+	letter-spacing: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    p{
+    	font-size: 26px;
+    	padding-top: 20px;
+    }
+}

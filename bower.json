@@ -1,0 +1,28 @@
+{
+  "name": "firstmodel.com",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "first",
+    "model",
+    "inc"
+  ],
+  "authors": [
+    "macate"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery-ui": "~1.12.1",
+    "html5-device-mockups": "https://github.com/pixelsign/html5-device-mockups.git"
+  }
+}

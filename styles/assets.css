@@ -1,0 +1,206 @@
+.fmi-yellow {
+    color: #fbd54b;
+}
+
+.fmi-bg-yellow {
+    background-color: #fbd54b;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-black{
+    background-color: #000000;
+}
+
+.light-grey: {
+    color: #f2f2f2;
+}
+
+.img-wraper {
+    padding: 0;
+}
+
+.fmi-section {
+    padding: 130px 120px 60px 120px;
+}
+
+.fmi-section-sidepadding {
+    padding: 130px 218px 60px 218px;
+}
+
+@media (max-width: 1659px) {
+    .fmi-section {
+        padding: 80px 100px 40px 100px;
+    }
+    .fmi-section-sidepadding {
+        padding: 80px 146px 40px 146px;
+    }
+}
+
+@media (max-width: 991px) {
+    .fmi-section {
+        padding: 60px 80px 30px 80px;
+    }
+    .fmi-section-sidepadding {
+        padding: 60px 120px 30px 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fmi-section {
+        padding: 30px 30px 10px 30px;
+    }
+    .fmi-section .fmi-section-subcaption{
+        font-size: 18px;
+    }
+    .fmi-section .fmi-section-caption{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    .fmi-section-sidepadding {
+        padding: 40px 0 20px 0;
+    }
+}
+
+.underline {
+    text-decoration: none;
+    position: relative;
+}
+
+.underline:hover {
+    cursor: pointer;
+}
+
+.underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+    bottom: -10px;
+    /****** 
+       optional values below 
+       ******/
+    /* center - (optional) use with adjusting width   */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    /* optional animation */
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+
+/* optional hover classes used with anmiation */
+
+.underline:hover:after {
+    width: 80%;
+}
+
+.underline-black:after {
+    background: #000000;
+}
+
+.underline-black:hover:after {
+    background: #fbd54b;
+}
+
+.underline-yellow:after {
+    background: #fbd54b;
+}
+
+.underline-yellow:hover:after {
+    background: #ffffff;
+}
+
+.underline-whenhover:after {
+    background: transparent;
+}
+
+.underline-whenhover:hover:after {
+    background: #fbd54b;
+}
+
+.underline-whenhover-black:after {
+    background: transparent;
+}
+
+.underline-whenhover-black:hover:after {
+    background: #000000;
+}
+
+.shine {
+    position: relative;
+}
+
+.shine::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: none;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+
+.shine:hover::before {
+    display: block;
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+
+.float-shadow:after { 
+    content:'';
+    display: block;
+    position: absolute;
+    left: 12%;
+    bottom: 0px;
+    width: 80%;
+    max-width: 100%;
+    height: 10px;
+    background: transparent;
+    border-radius: 4px;
+    box-shadow: 0 50px 40px rgba(0,0,0,0.5);
+}
+
+.hover-enlarge{
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.hover-enlarge:hover{
+    transform: scale(1.1);
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .float-shadow:after {
+        bottom: 48px;
+    }
+}

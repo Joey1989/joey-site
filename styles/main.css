@@ -1,0 +1,524 @@
+#sidebar-wrapper{
+	position: fixed;
+	right: 20px;
+	top: 30%;
+	z-index: 10;
+}
+
+.side-nav{
+    color: #fbd54b;
+    white-space: nowrap;
+    min-width: 130px;
+    background-color: transparent !important;
+}
+
+.nav>li>a{
+    color: #000000 !important;
+}
+
+.nav>li.active, .nav>li:hover{
+	background-color: #ffffff;
+	border-radius: 3px;
+	border: 1px #cccccc solid;
+}
+
+.nav>li.active, .nav>li:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*.side-nav .nav>li>a:focus, .nav>li>a:hover{
+	background-color: transparent;
+}*/
+
+.side-nav .nav-indicator{
+	margin-left: 15px;
+	padding: 1px 10px;
+	background-color: #fbd54b;
+}
+
+#heading{
+	position: relative;
+    background-image: url('../images/me-heading.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}   
+#heading .img-block-title {
+    /*max-width: 500px;*/
+    white-space: nowrap;
+    position: absolute;
+    bottom: 390px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fbd54b;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
+#heading .img-block-text {
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 47px 55px;
+    max-width: 1100px;
+    white-space: normal;
+    position: absolute;
+    bottom: 153px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+} 
+
+#heading .img-block-title h1{
+	font-family: Raleway;
+	font-size: 46px;
+	letter-spacing: 5px;
+}
+
+#heading .img-block-text h3{
+	font-family: Raleway;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+
+#heading .img-block-text h3:first-child{
+	white-space: nowrap;
+	margin-bottom: 20px;
+}
+
+#description {
+	/*letter-spacing: -7px;*/
+}
+
+#description h3{
+	margin: 0;
+}
+
+#description h3:first-child{
+    line-height: 1.57;
+}
+
+#description .logos{
+    display: flex;
+    flex-flow: row; 
+	flex-wrap: wrap;
+}
+
+#description .logos .img-wrapper{
+	width: 12.5%;
+	padding: 10px;
+    position: relative;
+    min-height: 200px;
+}
+
+#description .logos .img-wrapper img{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	max-width: 100px;
+}
+
+/*#devices {
+	padding: 100px 20px;
+}*/
+
+#devices .device-caption{
+    padding: 40px 0 60px 0;
+}
+
+#devices .device-caption h1{
+    font-size: 52px;
+    font-family: Raleway;
+}
+
+#devices .device-caption h4{
+	font-size: 18px;
+	font-family: Raleway;
+	margin-top: 20px;
+}
+
+#devices .device-row{
+	padding: 40px 10px;
+	display: flex;
+    flex-flow: row; 
+	flex-wrap: wrap;
+}
+
+#devices .device-row .device-item{
+	position: relative;
+	padding: 0 20px;
+	flex: 1;
+}
+
+#devices .device-row .device-item .device-mockup{
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+#devices .device-row .device-item .device-mockup:hover{
+    transform: scale(1.1);
+}
+
+#devices .device-row .device-item:after { 
+    content:'';
+    display: block;
+    position: absolute;
+    left: 12%;
+    bottom: 0px;
+    width: 80%;
+    max-width: 510px;
+    height: 10px;
+    background: transparent;
+    border-radius: 4px;
+    box-shadow: 0 50px 40px rgba(0,0,0,0.5);
+}
+
+#devices .device-row .device-item .device-mockup:hover:after{
+    transform: scale(1.1);
+}
+
+#devices .device-row .device-item-lg{
+	flex: 3;
+}
+
+#devices .device-row .device-item-md{
+	flex: 2;
+}
+
+#devices .device-row .device-item-sm{
+	flex: 1;
+}
+
+.products .products-caption{
+    padding: 40px 0 60px 0;
+}
+
+.products .products-caption h1{
+    font-size: 52px;
+    font-family: Raleway;
+}
+
+.products .products-caption h4{
+	font-size: 18px;
+	font-family: Raleway;
+	margin-top: 20px;
+}
+
+.products .products-description{
+	padding: 53px 43px 0 43px;
+	position: relative;
+}
+
+.products .products-description .products-item-caption{
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 90%;
+}
+
+/*triangles*/
+.products .products-description:nth-child(2):before{
+	content: "";
+    display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 40px 50px 0;
+	border-color: transparent #ffffff transparent transparent;
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 110;
+}
+
+.products .products-description:nth-child(2):hover:before{
+	border-color: transparent rgb(252,221,111) transparent transparent;
+}
+
+.products .products-description:nth-child(4):before{
+	content: "";
+    display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 50px 0 50px 40px;
+	border-color: transparent transparent transparent #ffffff;
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 110;
+}
+
+.products .products-description:nth-child(4):hover:before{
+	border-color: transparent transparent transparent rgb(252,221,111);
+}
+
+.products .products-description:nth-child(6):before{
+	content: "";
+    display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 50px 40px 50px;
+	border-color: transparent transparent #ffffff transparent;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 110;
+}
+
+.products .products-description:nth-child(6):hover:before{
+	border-color: transparent transparent rgb(252,221,111) transparent;
+}
+
+.products .products-description .img-wraper{
+	padding: 0;
+	max-width: 173px;
+	margin: 0 auto;
+}
+
+.products .products-description .text-wraper{
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: -3px;
+	line-height: 1.5;
+}
+
+#locations{
+	position: relative;
+    background-image: url('../images/bg-livingroom.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+#locations .img-block-text {
+	font-size: 14px;
+    white-space: normal;
+    position: absolute;
+    bottom: 220px;
+    top: 40%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+} 
+
+#locations .img-block-text .macate-location{
+	cursor: pointer;
+	color: #fbd54b;
+	text-decoration: none;
+}
+
+#locations .img-block-text img{
+	max-width: 100px;
+	margin-bottom: 20px;
+} 
+
+#locations .img-block-text .global-locations{
+	padding-top: 20px;
+	white-space: nowrap;
+}
+
+#locations .img-block-text .global-locations>a, #locations .img-block-text .global-locations span{
+    color: #cccccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#locations .img-block-text .global-locations span{
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+#social-media{
+	background-color: #000000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 70px;
+}
+#social-media .social-media-wrapper{
+	background-color: #000000;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#social-media .social-media-wrapper img{
+    max-width: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+footer{
+	background-color: #fbd54b;
+	padding-top: 24px;
+	padding-bottom: 20px;
+	min-height: 70px;
+}
+
+footer .copyright-wrapper{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+footer .copyright-wrapper a{
+	color: #000000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media (min-width: 1640px) {
+	#description h3{
+		font-size: 36px;
+	}
+	.products .products-description .text-wraper{
+        font-size: 12px;
+		line-height: 1.67;
+		letter-spacing: -3px;
+		padding-top: 27px;
+	}
+	#social-media, footer{
+	  	min-height: 99px;
+	}
+	#social-media{
+		padding-top: 36px;
+	}
+	footer{
+		padding-top: 40px;
+	}
+}
+
+@media screen and (max-width: 1640px) {
+	#description .logos .img-wrapper{
+    	width: 25%;
+    }
+	.products .products-description{
+		padding: 23px 25px 0 25px;
+	}
+	.products .products-description .img-wraper{
+		max-width: 153px;
+		margin: 0 auto;
+	}
+	.products .products-description .text-wraper{
+		font-size: 10px;
+		font-weight: 300;
+		letter-spacing: -3px;
+		line-height: 1.5;
+		padding-top: 17px;
+	}
+	#description .logos .img-wrapper img{
+        max-width: 80px;
+    }
+}
+
+@media screen and (max-width: 1199px){
+	#heading .img-block-text{
+		max-width: 720px;
+		padding: 30px;
+	}
+	#heading .img-block-title h1{
+		font-size: 36px;
+	}
+	#heading .img-block-text h3{
+		font-size: 22px;
+	}
+    #devices .device-row .device-item-lg{
+    	flex: none;
+		width: 100%;
+	}
+	#devices .device-row .device-item-md{
+		flex: 2;
+		width: 50%;
+	}
+	#devices .device-row .device-item-sm{
+		flex: 1;
+		width: 50%;
+	}
+	.products .products-description:before{
+		display: none !important;
+	}
+	#locations{
+		min-height: 350px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+    #heading{
+    	background-image: url('../images/me-heading.jpg');
+	    background-size: cover;
+	    background-position: center;
+	    min-height: 500px;
+	}
+	#heading .img-block-text{
+		max-width: 420px;
+		padding: 10px;
+	}
+	#heading .img-block-title{
+		bottom: 270px;
+	}
+	#heading .img-block-title h1{
+		font-size: 20px;
+	}
+	#heading .img-block-text h3{
+		font-size: 14px;
+	}
+	#description .logos .img-wrapper{
+    	width: 50%;
+    	min-height: 140px;
+    }
+    .products .products-caption, #devices .device-caption{
+	    padding: 20px 0 40px 0;.	}
+
+	.products .products-caption h1, #devices .device-caption h1{.	    font-size: 36px;
+	}
+
+	.products .products-caption h4, #devices .device-caption h4{.		font-size: 18px;
+		margin-top: 10px;
+	}
+	#locations{
+		min-height: 300px;
+	}
+}
+
+@media (max-width: 420px) {
+	#heading{
+		min-height: 400px;
+		max-height: 400px;
+	}
+	#heading .img-block-title{
+		bottom: 210px;
+	}
+	#heading .img-block-text{
+		bottom: 70px;
+		max-width: 320px;
+		min-width: 260px;
+		padding: 5px;
+	}
+	#heading .img-block-text h1{
+		white-space: normal !important;
+	}
+	#heading .img-block-text h3{
+		white-space: normal !important;
+	}
+    #description .logos .img-wrapper{
+    	display: none;
+    }
+    .products .products-caption h1, #devices .device-caption h1{
+	    font-size: 20px;.	}
+
+	.products .products-caption h4, #devices .device-caption h4{.		font-size: 12px;
+		margin-top: 5px;
+	}
+    footer .copyright-wrapper{
+    	font-size: 12px;
+    }
+}

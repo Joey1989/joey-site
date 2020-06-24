@@ -1,0 +1,152 @@
+/*h1, h2, h3, h4, h5, h6, h7{
+
+}*/
+@media (min-width: 1640px) {
+  .container {
+    width: 1600px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+body{
+	background-image: url('../images/backgroundpic.jpeg');
+}
+
+.p0{
+	padding: 0;
+}
+.p-b0{
+	padding-bottom: 0 !important;
+}
+.p-t0{
+	padding-top: 0 !important;
+}
+
+body{
+	background-color: #efefef;
+}
+
+/*flex*/
+.flex-grid {
+    display: flex;
+    flex-flow: row; 
+	flex-wrap: wrap;
+}
+.flex-grid .col {
+	width: 33.3333%;
+	position: relative;
+	min-height: 300px;
+}
+.flex-grid .col img{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000000 !important;
+}
+
+.flex-grid .col:nth-child(1){
+	order: 1;
+}
+.flex-grid .col:nth-child(2){
+	order: 2;
+}
+.flex-grid .col:nth-child(3){
+	order: 3;
+}
+.flex-grid .col:nth-child(4){
+	order: 4;
+}
+.flex-grid .col:nth-child(5){
+	order: 5;
+}
+.flex-grid .col:nth-child(6){
+	order: 6;
+}
+
+@media (max-width: 1639px) {
+    .flex-grid .col:last-child .img{
+        max-width: 110px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1199px) {
+	.flex-grid .col {
+		width: 50%;
+	}
+	.flex-grid .col:nth-child(3){
+        order: 4;
+	}
+	.flex-grid .col:nth-child(4){
+        order: 6;
+	}
+	.flex-grid .col:nth-child(6){
+        order: 3;
+	}
+}
+
+@media (max-width: 767px) {
+    .flex-grid .col {
+		width: 100%;	}
+	.flex-grid .col:nth-child(4){
+        order: 4;
+	}
+	.flex-grid .col:nth-child(3){
+        order: 3;
+	}
+	.flex-grid .col:nth-child(4){
+        order: 6;
+	}
+	.flex-grid .col:nth-child(even){
+	    min-height: 450px;
+	}
+	#products .products-description .img-wraper img{
+		max-width: 250px;
+	    margin: auto;
+	    padding-top: 30px;
+	}
+	#products .products-description .text-wraper{
+		padding-top: 20px;
+        font-size: 14px;
+        line-height: 2;
+	}
+}
+
+@media (max-width: 609px) {
+    .flex-grid .col:nth-child(even){
+	    min-height: 300px;
+	}
+	#products .products-description .img-wraper img{
+		max-width: 200px;
+	    margin: auto;
+	    padding-top: 10px;
+	}
+	#products .products-description .text-wraper{
+		padding-top: 5px;
+        font-size: 12px;
+        line-height: 1;
+	}
+}
+
+@media (max-width: 419px) {
+	.flex-grid .col:nth-child(even){
+	    min-height: 250px;
+	}
+	#products .products-description .img-wraper img{
+		max-width: 150px;
+	    margin: auto;
+	    padding-top: 0;
+	}
+	#products .products-description .text-wraper{
+		padding-top: 5px;
+        font-size: 10px;
+        line-height: 1;
+	}
+}
