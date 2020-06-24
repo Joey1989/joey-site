@@ -4,7 +4,7 @@
   "description": "This is a Joey's site",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "mocha test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Joey1989/joey-site#readme",
   "dependencies": {
+    "chai": "^4.2.0",
     "mocha": "^8.0.1"
   }
 }
