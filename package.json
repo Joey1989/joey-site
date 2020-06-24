@@ -1,19 +1,22 @@
 {
   "name": "joey_site",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a Joey's site",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Joey1989/joey-site.git"
   },
-  "author": "",
+  "author": "Joey liu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Joey1989/joey-site/issues"
   },
-  "homepage": "https://github.com/Joey1989/joey-site#readme"
+  "homepage": "https://github.com/Joey1989/joey-site#readme",
+  "dependencies": {
+    "mocha": "^8.0.1"
+  }
 }
